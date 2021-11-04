@@ -1,0 +1,188 @@
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 18%, 52%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hover: #766cf1;
+    --space-between: 20px;
+
+
+}
+
+html,
+body {
+    /* background-image: url("images/pattern-background-desktop.svg"); */
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (max-width: 380px) {
+    body {
+        background-color: hsl(225, 100%, 94%);
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h3,
+h4 {
+    color: var(--dark-blue)
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+p {
+    color: var(--desaturated-blue);
+    margin: 0;
+    font-weight: 500;
+}
+
+
+.top-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.below-image {
+    padding: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    margin: 0 auto;
+}
+
+.container {
+    /* border: black solid 2px; */
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 7px 22px 28px -11px rgba(111, 122, 155, 0.37);
+    box-shadow: 7px 22px 28px -11px rgba(111, 122, 155, 0.37);
+}
+
+/* Order Summary */
+.order-summary {
+    margin-bottom: var(--space-between);
+}
+
+
+/* Selected Plan */
+.selected-plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: var(--space-between);
+}
+
+.selected-plan p {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.selected-plan a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.selected-plan .icon {
+    flex: .7;
+    text-align: left;
+}
+
+.selected-plan .plan {
+    flex: 1;
+    text-align: left;
+}
+
+.selected-plan .change-plan {
+    flex: 1;
+    text-align: right;
+}
+
+.selected-plan a:hover {
+    color: var(--hover);
+}
+
+/* Button */
+button {
+    margin-bottom: var(--space-between);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0px 12px 11px #e1e7f7;
+    -moz-box-shadow: 0px 12px 11px #e1e7f7;
+    box-shadow: 0px 12px 11px #e1e7f7;
+    color: #ffffff;
+    font-size: .8rem;
+    background: #3829e0;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #766cf1;
+    text-decoration: none;
+
+}
+
+/* Cancel Order */
+.cancel-button a {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.cancel-button a:hover {
+    color: var(--dark-blue)
+}

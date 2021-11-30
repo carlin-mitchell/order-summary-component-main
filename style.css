@@ -18,8 +18,8 @@ body {
     background-color: hsl(225, 100%, 94%);
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
+    /* background-position: top;
+    background-size: auto; */
     background-attachment: fixed;
     text-align: center;
     height: 100%;
@@ -41,12 +41,12 @@ a {
     text-decoration: none;
 }
 
-h3,
+h1,
 h4 {
     color: var(--dark-blue)
 }
 
-h3 {
+h1 {
     font-size: 1.2rem;
     font-weight: 900;
 }
@@ -77,13 +77,13 @@ p {
 }
 
 .below-image {
-    padding: 20px;
+    padding: 25px;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 
 }
 
